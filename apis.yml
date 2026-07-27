@@ -1,8 +1,25 @@
 aid: hyperspace
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hyperspace.png
 name: Hyperspace
-description: 'Hyperspace is a company surfaced as a portfolio company of pantera-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Hyperspace is a crypto/blockchain venture backed by Pantera Capital, added to the API
+  Evangelist network as a portfolio-lead stub. As of July 2026 its domain hyperspace.xyz 301-redirects
+  to joinearlybird.com, where the project now operates as "Earlybird" — a pre-mainnet blockchain effort
+  ("When Mainnet? Soon") with a private devnet at dev.joinearlybird.com (access-restricted, HTTP 403).
+  There is no public API, OpenAPI/AsyncAPI specification, SDK, developer portal, documentation, pricing,
+  or terms surface published yet; no /.well-known discovery documents are served on either host. This
+  profile remains a lead awaiting a real developer surface before the enrichment pipeline can capture
+  substantive API artifacts.'
 url: https://raw.githubusercontent.com/api-evangelist/hyperspace/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +27,18 @@ x-backed-by:
 - pantera-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebrand: hyperspace.xyz redirects (301) to joinearlybird.com (Earlybird), pre-mainnet as of 2026-07
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Crypto
+- Blockchain
+- Web3
+- Pre-Mainnet
+- Devnet
+- Pantera Capital
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,15 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/hyperspace-domain-security.yml
 - type: Website
+  url: https://joinearlybird.com/
+- type: Website
+  name: Hyperspace (legacy domain, redirects to Earlybird)
   url: https://hyperspace.xyz/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
