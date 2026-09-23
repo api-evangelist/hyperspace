@@ -1,0 +1,21 @@
+# Front Door AI Index — hyperspace — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: hyperspace
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: joinearlybird.com
+  final_host: joinearlybird.com
+  ownership: own
+  owner: hyperspace
+  shares_host_with: null
+  inherited_from: null
+  verdict: thin
+  score: null
+  host_score: null
+  density: null
+  words: 11
+  tiers: null
+  ambiguous: null
+  top_terms: null
